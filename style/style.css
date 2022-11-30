@@ -1,0 +1,609 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;1,100;1,300&display=swap");
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    -webkit-transition: .2s linear;
+    transition: .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+}
+
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #10221b;
+}
+
+section {
+    padding: 5rem 9%;
+}
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    border: 0.2rem solid #10221b;
+    color: #10221b;
+    cursor: pointer;
+    background: none;
+    font-size: 1.7rem;
+    padding: 1rem 3rem;
+}
+
+.btn:hover {
+    background: #10221b;
+    color: #fff;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-size: 4rem;
+    color: #10221b;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem 9%;
+    z-index: 1000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #eee;
+}
+
+.header.active {
+    background: #fff;
+    -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.header .logo {
+    margin-right: auto;
+    font-size: 2.5rem;
+    color: #10221b;
+    font-weight: bolder;
+}
+
+.header .logo i {
+    color: #219150;
+}
+
+.header .navbar a {
+    margin-left: 2rem;
+    font-size: 1.7rem;
+    color: #10221b;
+}
+
+.header .navbar a:hover {
+    color: #219150;
+}
+
+.header .navbar #nav-close {
+    font-size: 5rem;
+    cursor: pointer;
+    color: #10221b;
+    display: none;
+}
+
+.header .icons a,
+.header .icons div {
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    cursor: pointer;
+    color: #10221b;
+}
+
+.header .icons a:hover,
+.header .icons div:hover {
+    color: #219150;
+}
+
+.header #menu-btn {
+    display: none;
+}
+
+
+.home {
+    padding: 0;
+}
+
+.home .box {
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-size: cover !important;
+    background-position: center !important;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding: 2rem 9%;
+}
+
+.home .box.second {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+
+.home .box .content {
+    width: 50rem;
+}
+
+.home .box .content span {
+    font-size: 4rem;
+    color: #10221b;
+}
+
+.home .box .content h3 {
+    font-size: 6rem;
+    color: #219150;
+    padding-top: .5rem;
+    text-transform: uppercase;
+}
+
+.home .box .content p {
+    line-height: 2;
+    color: #10221b;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.category .box-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(29rem, 1fr))[auto-fit];
+    grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
+    gap: 1.5rem;
+}
+
+.swiper-wrapper {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+}
+
+.category .box-container .box {
+    text-align: center;
+    padding: 1rem;
+}
+
+.category .box-container .box img {
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.category .box-container .box h3 {
+    font-size: 2rem;
+    color: #219150;
+}
+
+.category .box-container .box p {
+    font-size: 1.5rem;
+    color: #10221b;
+    padding: 1rem 0;
+    line-height: 2;
+}
+
+/* Packagese Section Start */
+.packages {
+    background: #eee;
+}
+
+.packages .box-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(32rem, 1fr))[auto-fit];
+    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+    gap: 1.5rem;
+}
+
+.packages .box-container .box {
+    text-align: center;
+    background: #fff;
+    border: 0.2rem solid #10221b;
+    -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: .5rem;
+}
+
+.packages .box-container .box:hover {
+    background: #10221b;
+}
+
+.packages .box-container .box:hover .content>* {
+    color: #fff;
+}
+
+.packages .box-container .box:hover .btn {
+    border-color: #fff;
+}
+
+.packages .box-container .box:hover .btn:hover {
+    background: #fff;
+    color: #10221b;
+}
+
+.packages .box-container .box .image {
+    height: 25rem;
+    overflow: hidden;
+    padding: 2rem;
+    padding-bottom: 0;
+    border-radius: .5rem;
+}
+
+.packages .box-container .box .image img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: .5rem;
+}
+
+.packages .box-container .box .content {
+    padding: 2rem;
+}
+
+.packages .box-container .box .content h3 {
+    font-size: 2rem;
+    color: #10221b;
+}
+
+.packages .box-container .box .content p {
+    font-size: 1.5rem;
+    color: #10221b;
+    padding: 1rem 0;
+    line-height: 2;
+}
+
+.packages .box-container .box .content .price {
+    font-size: 2rem;
+    color: #219150;
+}
+
+/* Packagese Section End */
+
+/* Heading 1  */
+.heading1 {
+    text-align: center;
+    padding: 2.5rem 0
+}
+
+.heading1 span {
+    font-size: 3.5rem;
+    background: #219150;
+    color: #eee;
+    border-radius: .5rem;
+    padding: .2rem 1rem;
+}
+
+.heading1 span.space {
+    background: none;
+}
+
+/* Book Now Section Start */
+.book .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.book .row .image {
+    flex: 1 1 40rem;
+}
+
+.book .row .image img {
+    width: 100%;
+}
+
+.book .row form {
+    flex: 1 1 40rem;
+    padding: 2rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+}
+
+.book .row form .inputBox {
+    padding: .5rem 0;
+}
+
+.book .row form .inputBox input {
+    width: 100%;
+    padding: 1rem;
+    border: .1rem solid rgba(0, 0, 0, .1);
+    font-size: 1.7rem;
+    color: #333;
+    text-transform: none;
+}
+
+.book .row form .inputBox h3 {
+    font-size: 2rem;
+    padding: 1rem 0;
+    color: #666;
+}
+
+/* Book Now Section End */
+
+/* Shop Section Start */
+.packages .box-container2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.packages .box-container2 .box {
+    flex: 1 1 30rem;
+    border-radius: .5rem;
+    overflow: hidden;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
+}
+
+.packages .box-container2 .box img {
+    height: 25rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.packages .box-container2 .box .content {
+    padding: 2rem;
+}
+
+.packages .box-container2 .box .content h3 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.packages .box-container2 .box .content h3 i {
+    color: #219150;
+}
+
+.packages .box-container2 .box .content p {
+    font-size: 1.7rem;
+    color: #666;
+    padding: 1rem 0;
+}
+
+.packages .box-container2 .box .content .stars i {
+    font-size: 1.7rem;
+    color: #219150;
+}
+
+.packages .box-container2 .box .content .price {
+    font-size: 2rem;
+    color: #333;
+    padding-top: 1rem;
+}
+
+.packages .box-container2 .box .content .price span {
+    color: #666;
+    font-size: 1.5rem;
+    text-decoration: line-through;
+}
+
+/* Shop Section End */
+
+/* Service Section Start */
+.services .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.services .box-container .box {
+    flex: 1 1 30rem;
+    border-radius: .5rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.services .box-container .box i {
+    padding: 1rem;
+    font-size: 5rem;
+    color: #219150;
+}
+
+.services .box-container .box h3 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.services .box-container .box p {
+    font-size: 1.5rem;
+    color: #666;
+    padding: 1rem 0;
+}
+
+.services .box-container .box:hover {
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
+}
+
+/* Service Section End */
+
+/* Newslet section start */
+.newsletter {
+    background: #eee;
+}
+
+.newsletter .content {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.newsletter .content p {
+    font-size: 1.5rem;
+    line-height: 2;
+    color: #10221b;
+}
+
+.newsletter .content form {
+    margin-top: 2rem;
+    background: #fff;
+    border-radius: 5rem;
+    border: 0.2rem solid #10221b;
+    padding: .7rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.newsletter .content form .email {
+    width: 100%;
+    background: none;
+    text-transform: none;
+    font-size: 1.6rem;
+    color: #10221b;
+    padding: 0 1.3rem;
+}
+
+.newsletter .content form .btn {
+    margin-top: 0;
+    border-radius: 5rem;
+    background: #10221b;
+    color: #fff;
+}
+
+.newsletter .content form .btn:hover {
+    background: none;
+    color: #10221b;
+}
+
+/* Newslet section end */
+
+
+/* Contact Section Start  */
+.contact .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.contact .row .image {
+    flex: 1 1 35rem;
+}
+
+.contact .row .image img {
+    width: 100%;
+}
+
+.contact .row form {
+    flex: 1 1 50rem;
+    padding: 2rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+}
+
+.contact .row form .inputBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact .row form .inputBox input,
+.contact .row form textarea {
+    width: 49%;
+    margin: 1rem 0;
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: #333;
+    background: #f7f7f7;
+    text-transform: none;
+}
+
+.contact .row form textarea {
+    height: 15rem;
+    resize: none;
+    width: 100%;
+}
+
+/* Contact Section End  */
+
+/* Footer Section Start */
+.footer {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/footer-bg.jpg) no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/footer-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.footer .box-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.footer .box-container .box h3 {
+    font-size: 2rem;
+    padding: 1.5rem 0;
+    color: #fff;
+}
+
+.footer .box-container .box a {
+    display: block;
+    font-size: 1.4rem;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a i {
+    color: #219150;
+    padding-right: .5rem;
+}
+
+.footer .box-container .box a:hover {
+    color: #219150;
+}
+
+.footer .box-container .box a:hover i {
+    padding-right: 2rem;
+}
+
+.footer .credit {
+    text-align: center;
+    margin-top: 2.5rem;
+    padding: 1rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.footer .credit span {
+    color: #219150;
+}
+
+/* Footer Section End */
