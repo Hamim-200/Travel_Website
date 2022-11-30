@@ -53,12 +53,16 @@ section {
     color: #fff;
 }
 
+
+
 .heading {
     text-align: center;
     margin-bottom: 2.5rem;
     font-size: 4rem;
     color: #10221b;
 }
+
+/* Navbar section starts   */
 
 .header {
     position: fixed;
@@ -127,6 +131,9 @@ section {
     display: none;
 }
 
+/* Navbar section Ends  */
+
+/* Home Section Start */
 
 .home {
     padding: 0;
@@ -134,8 +141,6 @@ section {
 
 .home .box {
     min-height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -146,12 +151,6 @@ section {
     -ms-flex-pack: end;
     justify-content: flex-end;
     padding: 2rem 9%;
-}
-
-.home .box.second {
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
 }
 
 .home .box .content {
@@ -176,6 +175,9 @@ section {
     font-size: 1.5rem;
     padding: 1rem 0;
 }
+
+/* Home Section Ends */
+
 
 .category .box-container {
     display: -ms-grid;
