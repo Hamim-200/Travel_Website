@@ -178,19 +178,13 @@ section {
 
 /* Home Section Ends */
 
-
+/* Category Section Start */
 .category .box-container {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (minmax(29rem, 1fr))[auto-fit];
     grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
     gap: 1.5rem;
-}
-
-.swiper-wrapper {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    gap: 20px;
 }
 
 .category .box-container .box {
@@ -216,6 +210,9 @@ section {
     padding: 1rem 0;
     line-height: 2;
 }
+
+/* Category Section Start  */
+
 
 /* Packagese Section Start */
 .packages {
@@ -311,6 +308,14 @@ section {
 
 .heading1 span.space {
     background: none;
+}
+
+
+
+.swiper-wrapper {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
 }
 
 /* Book Now Section Start */
